@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+           table{
+              position: absolute;
+              top:50%;
+              left:50%;
+              transform:translate(-50%,-50%);
+           }
+           img{
+              width:50px;
+              height: 50px;
+           }
+           
+    </style>
+    <title>fanorona</title>
+</head>
+<body> 
+     <table border="5" cellpadding="40">
+        <tr>
+            <td id="1" onclick="ajout(this)"></td>
+            <td id="2" onclick="ajout(this)"></td>
+            <td id="3" onclick="ajout(this)"></td>
+        </tr>
+        <tr>
+            <td id="4" onclick="ajout(this)"></td>
+            <td id="5" onclick="ajout(this)"></td>
+            <td id="6" onclick="ajout(this)" ></td>
+        </tr>
+        <tr>
+            <td id="7" onclick="ajout(this)"></td>
+            <td id="8" onclick="ajout(this)"></td>
+            <td id="9" onclick="ajout(this)"></td>
+        </tr>  
+     </table> 
+    <script>
+        var t = true;
+        function ajout(choix){
+            if(t==true){
+                choix.innerHTML = 1;
+                t = false;
+                
+            }else{
+                choix.innerHTML=2;
+                t = true;
+                
+            }
+            
+            
+        }
+      
+    </script>
+</body>
+</html>
